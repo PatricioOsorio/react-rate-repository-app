@@ -17,8 +17,9 @@ const theme = {
     bold: 700,
   },
   appBar: {
-    primary: '#2429e',
+    primary: '#24292e',
     textPrimary: '#fff',
+    textSecondary:'#999'
   },
 };
 
