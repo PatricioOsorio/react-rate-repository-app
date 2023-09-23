@@ -34,7 +34,7 @@ const AppBarTab = ({ children, to }) => {
   const { pathname } = useLocation();
   const active = pathname === to;
   const textStyles = [styles.text, active && styles.active];
-  
+
   return (
     <Link to={to} component={TouchableOpacity}>
       <StyledText fontWeight="bold" style={textStyles}>
@@ -48,9 +48,7 @@ const AppBar = () => {
   return (
     <View style={styles.container}>
       <ScrollView horizontal style={styles.scroll}>
-        <AppBarTab active to="/">
-          Repositories
-        </AppBarTab>
+        <AppBarTab active to="/">Repositories</AppBarTab>
         <AppBarTab to="/signin">Sign In</AppBarTab>
       </ScrollView>
     </View>

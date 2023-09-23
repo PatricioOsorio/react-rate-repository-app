@@ -4,6 +4,7 @@ import RepositoryList from './RepositoryList';
 import AppBar from './AppBar';
 import { NativeRouter, Route, Routes } from 'react-router-native';
 import Error404 from './Error404';
+import LogIn from './pages/LogIn';
 
 const Main = () => {
   return (
@@ -11,7 +12,7 @@ const Main = () => {
       <AppBar />
       <Routes>
         <Route path="/" element={<RepositoryList />} />
-        <Route path="/signin" element={<Text>Trabajando en ello</Text>} />
+        <Route path="/signin" element={<LogIn />} />
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>
     </View>
